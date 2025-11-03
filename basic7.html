@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 2일차 - 테이블 생성</title>
+</head>
+<body>
+    <!-- table 태그(부모) : tr,td 자식태그 
+    cellspacing : 칸 기준으로 바깥쪽 여백 조정
+    cellpadding : 칸 기준으로 안쪽 여백 조정 
+    -->
+     <table border="1" cellspacing="0" cellpadding="0"> <!--border 속성 : 외각선을 설정하는 속성값-->
+        <tr> <!-- tr : 줄(행) -->
+            <td>2025</td> <!-- td : 칸(열)  -->
+            <td>2026</td>
+        </tr>
+        <tr>
+            <td>2000</td>
+            <td>3000</td>
+        </tr>
+     </table>
+<!--
+align 속성(정렬기준) : left,center,right
+width : 가로 사이즈
+height : 세로 사이즈
+-->
+<!-- 
+중요사항 : width 적용시 table에 적용할 경우 td의 사이즈와 관계없이 테이블 전체 고정 사이즈가 정해짐 
+각각의 td에 width을 적용시 table에는 width를 별도로 지정하지 않습니다.
+ -->
+     <table border="1" cellpadding="0" cellspacing="0" align="center">
+        <tr align="center" bgcolor="#ccc"> <!--tr에 해당 align 속성을 사용시 td에 적용된 폰트, 이미지 모두 정렬로 적용됨-->
+            <td width="80">NO</td>
+            <td width="300">제목</td>
+            <td width="100">글쓴이</td>
+            <td width="100">조회수</td>
+            <td width="100">등록일</td>
+        </tr>
+        <tr align="center">
+            <td>2</td>
+            <td align="left">
+            <a href="http://naver.com">HTML 기초 연습 배우는중...</a>
+            </td> <!--td에 align은 특정 칸에만 적용하는 정렬방식-->
+            <td>관리자</td>
+            <td>50</td>
+            <td>2025-10-31</td>
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td align="left">IDE 개발 프로그램 설치 방법...</td>
+            <td>관리자</td>
+            <td>10</td>
+            <td>2025-10-30</td>
+        </tr>
+
+     </table>
+
+
+</body>
+</html>

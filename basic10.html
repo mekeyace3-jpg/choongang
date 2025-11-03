@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 2일차 - 사용자 정보 입력 태그</title>
+</head>
+<body>
+    <!--
+    input태그 : 사용자가 데이터 정보를 입력하는 태그
+    속성 : text (문자, 숫자, 특수문자등) 다양한 사용자 입력값을 노출하여 보여주는 입력폼
+    password : 사용자가 입력한 값을 특수문자(디스크)로 출력시키는 폼
+    checkbox : 사용자가 한가지 이상 선택을 할 때 사용하는 폼
+    radio : 여러개의 선택 중 한가지만 선택시 사용하는 폼
+    button : value와 무조건 함께 사용하며 클릭시 이벤트가 발생되는 폼
+    -->
+    아이디 : <input type="text"><br>
+    패스워드 : <input type="password"><br>
+    <!--checked라는 속성은 미리 해당 값을 선택하는 속성이며 checkbox, radio에만 사용합니다. -->
+    <input type="checkbox" checked>자동 로그인<br>
+    <input type="radio">신용카드 결제<br>
+    <input type="button" value="로그인">
+    <br><br><br>
+    <!-- radio 속성 형태는 그룹형태의 구조를 가지고 있기 때문에 name 속성 없이는 셋팅이 불가능 합니다.-->
+    <input type="radio" name="a">동의함
+    <input type="radio" name="a" checked>동의안함<br><br>
+    <input type="radio" name="b">동의함
+    <input type="radio" name="b">동의안함
+    <br><br>
+    <!-- readonly란 checkbox, radio, button외에는 사용가능한 속성이며 읽기 전용 입니다.-->
+    고객명 : <input type="text" value="홍길동" readonly>
+    <br><br>
+    <!-- 
+    select태그는 option 함께 무조건 사용되며, 개발자가 미리 값을 설정한 부분을 사용자가
+    선택할 수 있도록 하는 태그 입니다.
+     -->
+    <select>
+        <option value="">통신사</option>
+        <option value="SKT">SKT</option>
+        <option value="KT">KT</option>
+        <option value="LGT">LGT</option>
+        <option value="알뜰폰">알뜰폰</option>
+    </select>
+    <br><br>
+    <!--
+    textarea는 여러 단어를 복합적으로 입력을 필요로 할 경우 사용하는 태그이며,
+    cols 속성은 한 줄에 입력되는 단어 갯수 (숫자,영문)이며, rows는 한번에 보여지는
+    라인수를 말합니다. 주의사항 절대 엔터 금지
+    -->
+<textarea cols="100" rows="5" readonly>
+[개인회원 약관]
+본 약관은 2025년 10월 기준    
+</textarea>
+
+
+</body>
+</html>

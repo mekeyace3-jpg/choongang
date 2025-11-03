@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 1일차 (목차, 링크)</title>
+</head>
+<body>
+<!-- 
+    ul, ol : 목차태그 이며 (부모태그)
+    li(List item) : 데이터 리스트 태그 (자식태그)
+-->
+    <ul>
+        <li>공지사항1</li>
+        <li>공지사항2</li>
+        <li>공지사항3</li>
+    </ul>
+    <ol>
+        <li>공지사항1</li>
+        <li>공지사항2</li>
+        <li>공지사항3</li>
+    </ol>
+<!-- dl,dt,dd : 목차태그 HTML5 전용 태그 입니다.-->
+    <dl> <!--dl = ol, ul과 동일하게 부모태그-->
+        <dt>오늘의 헤드라인 뉴스</dt> <!-- 그룹 항목을 표시 (필수요건은 아닙니다.)-->
+        <!--dd = li 같은 형태의 목차 리스트 입니다.-->
+        <dd>2025-10 오늘의 날씨</dd>
+        <dd>2025-10 목요일 주요 이슈</dd>
+    </dl>
+    <!-- 응용편 (FAQ, 타이틀에 맞는 주제 목록, 연혁)-->
+    <dl>
+        <dt>퍼스트 라이드</dt>
+        <dd>개요 : 코미디</dd>
+        <dd>개봉일 : 2025.10</dd>
+        <dt>8번 출구</dt>
+        <dd>개요 : 스릴러</dd>
+        <dd>개봉일 : 2025.11</dd>
+    </dl>
+    <!-- 
+    a 태그 : 목적지 위치를 적용하는 태그 단독으로 사용 불가 무조건 속성을 적용 
+    href 속성 : 링크라는 위치를 말하는 속성 (웹주소)
+    target 속성 기본 : _self : 현재 페이지에서 다른 링크 페이지로 이동
+    _blank : 신규 탭을 오픈 후 페이지를 이동
+    _new : 주로 팝업창이나 모바일 전용으로 신규 탭 페이지 이동
+    _top : 팝업창 적용되는 최상위 페이지를 오픈시켜서 이동
+    -->
+    <a href="http://naver.com" target="_self">네이버</a><br>
+    <a href="http://nate.com" target="_blank">네이트</a>
+    <br><br>
+    <!-- 글자 색상이 red 로 적용되지만 a 태그가 font 태그 안에 적용되므로 기본 색상 blue 변경됨-->
+    <font color="red">
+    <a href="http://google.com">구글</a>
+    </font>
+    
+    <!-- a 태그 기본색상 blue에서 적용된 사항을 font 태그에서 red로 속성 변경을 하게됨-->
+    <a href="http://google.com">
+        <font color="red">구글사이트</font>
+    </a>
+    
+</body>
+</html>

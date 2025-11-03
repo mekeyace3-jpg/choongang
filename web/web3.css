@@ -1,0 +1,55 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 0 0 50px 0; /* 모서리를 둥글게 변화 (왼쪽상단,오른쪽상단,오른쪽하단,왼쪽하단) */
+}
+.box2{
+    /* cursor : 마우스 포인트 모양을 변경할 수 있습니다.
+       move : 드레그 할 수 있는 위치 조정 포인터로 변경됨
+       crosshair : +자 모양으로 여러개를 선택하는 형태의 포인터
+       pointer : 클릭을 유도하는 포인터    
+    */
+    cursor: move;  
+    width: 120px;
+    height: 30px;
+    background-color: #aaa;
+    /* border-radius: 10px 10px 10px 10px; */
+    border-radius: 10px;    /* 동일한 숫자일 경우 한번만 적용하여 사용 합니다. */
+    text-align: center;
+    line-height: 30px;  /* line-height 속성 : 줄간격을 조절 할 수 있는 속성 */
+}
+/* 이벤트 클래스이며, hover : 마우스 포인터가 해당 오브젝트를 오버 했을 경우 
+   active : 마우스 포인터가 위치한 후 클릭을 누를 경우 발생하는 이벤트 속성
+*/
+.box2:hover{  
+    background-color: skyblue;
+}
+.box2:active{
+    background-color: hotpink;
+}
+
+.box3, .box4{   /* 같은 효과가 여러개 클래스에 적용할 경우 , 로 구분하여 사용할 수 있습니다. */
+    width: 100px;
+    height: 100px;
+}
+/* 각각 다른 설정을 적용할 경우 각 클래스 별로 적용하시면 됩니다. */
+.box3{
+    background-color: blue;
+    border-radius: 10px 0 10px 0;
+}
+.box4{
+    background-color: red;
+    border-radius: 50px 0 50px 50px;
+}
+
+
+
+
+
+

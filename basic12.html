@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 2일차 - 사용자 정보 입력 태그(form 통신)</title>
+</head>
+<body>
+    <!--
+    form 태그 : 사용자가 입력한 모든 값을 Back-end에게 해당 URL로 데이터를 전송하는 역활을 합니다.
+    method 속성 : 전송방식 
+    (get - URL에 데이터를 출력시켜서 보내는 방식,post - URL암호화 방식으로 전송하는 방식)
+    submit 속성 : 사용자 모든 값을 입력 후 엔터 키를 작동시 form이 작동 되도록 하는 역활
+    maxlength : 최대 입력 할 수 있는 단어 갯수
+    minlength : 최소 입력 하는 단어 갯수
+    -->
+    <form id="form" method="post" action="./basic11.html">
+    아이디 : <input type="text" name="mid" maxlength="8"><br>
+    패스워드 : <input type="password" name="mpass"><br>
+    <!--
+    file 속성 : 파일을 전송하는 태그 속성이며 
+    multiple 을 적용시 한개 이상 파일을 전송할 수 있습니다.
+    -->
+    첨부파일 : <input type="file" multiple><br>
+    <input type="submit" value="로그인">
+    <input type="reset" value="초기화"> <!--reset : 사용자가 입력한 값을 초기화 시키는 속성-->
+</form>
+<!--해당 코드는 button 속성에 javascript를 이용하여 form 통신을 하는 방식 -->
+<!--
+<input type="button" value="로그인" onclick="login()">
+-->
+    <script>
+        function login(){
+            form.submit();
+        }
+    </script>
+</body>
+</html>

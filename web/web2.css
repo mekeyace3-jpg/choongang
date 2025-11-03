@@ -1,0 +1,42 @@
+@charset "utf-8"; /* css 파일의 언어셋을 셋팅 */
+/* body태그에 적용하는 방법 maring: 바깥쪽 여백, padding: 안쪽 여백 */
+body{
+    margin: 0;
+    padding: 0;    
+}
+
+.box1{
+    width: 200px;
+    height: 40px;
+    background-color: blue;
+}
+.color1{
+    background-color: black;
+}
+#box2{
+    width: 200px;
+    height: 40px;
+    background-color: pink;
+}
+#box3{
+    width: 200px;
+    height: 40px;
+    background-color: pink;
+}
+
+.color2{
+    background-color: red;
+}
+
+.btn1{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+}
+.btn2{
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+}

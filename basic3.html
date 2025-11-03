@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 1일차 (이미지)</title>
+</head>
+<body>
+<!-- img 태그 : 이미지를 로드 할 수 있는 태그 입니다. 단 무조건 src라는 속성을 활용합니다.-->
+<!-- 202212008462_500.jpg : 웹서비스에서 해당 파일을 로드 하여 출력하는 방식 -->
+<img src="https://image.utoimage.com/preview/cp872722/2022/12/202212008462_500.jpg">
+<!-- CDN서버에서 API를 활용하여 출력하는 방식-->
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbcWWZk_1zpAqAOr7We9SJY0E00xe67OBtIw&s">
+
+<!-- 
+http, https : 외부에서 이미지를 로드
+/ 또는 ./ 또는 ../로 시작해서 사용하는 방식은 자신의 pc에 저장된 이미지를 로드
+
+**focus**
+1. src 경로에 http 또는 https로 사용하는 방식 윈도우(c:\,d:\) Linux,Max(/)=> 절대경로
+2. src 경로에 ./ 또는 ../를 사용하는 방식 => 상대경로
+-->
+<img src="/2025.jpg"> <!-- 자체 서버에서 로드하여 출력 -->
+<img src="http://127.0.0.1:8080/2025.jpg"> <!-- 한번더 접속하여 해당 이미지를 로드-->
+<img src="http://mekeyace.kbsn.or.kr/aa.jpg">
+
+
+</body>
+</html>

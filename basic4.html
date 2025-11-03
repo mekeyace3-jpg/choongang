@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 1일차 (상대경로 연습 + 동영상)</title>
+</head>
+<body>
+    상대경로 연습
+<!--
+이미지 : .jpg, .jpeg, .bmp, .png, .gif => .webp 웹사이트 이미지 로딩속도를 높이며 애니메이션화 할 수 있는 이미지 파일
+동영상 : .mpeg, .mp4, .avi => .webm 웹사이트에서 동영상을 고화질 비디오 포맷을 제공하며, 최적화 되어 있습니다.
+-->
+    <img src="./webp/product01.webp">
+    <img src="./admin/a5.jpeg">
+<br><br>
+<!--동영상 화면 출력 (HTML4)-->
+<!-- object, embed 태그는 문서파일(.xls,.xlsx,.txt,.pdf), 동영상도 출력가능 media 플레이어-->
+
+<!-- html 4.01 => embed를 좀 더 보강한 태그 구조-->
+<object width="400" height="400" data="./img/apink.mp4"> 
+    <param name="autoplay" value="true">   <!-- 자동 재생-->
+    <param name="showcontrols" value="true"> <!-- 재생, 일지정지 등 미디어 도구틀을 출력-->
+</object>
+<!-- pdf 파일을 웹에서 직접 확인 할 수 있는 기능 param을 사용하지 않음
+<object data="./img/abc.pdf"></object> 
+-->
+<!-- html4 초기버젼 가장 기본적인 미디어 플레이어 -->
+<embed src="./img/apink.mp4" width="400" height="400" >
+<br><br><br>
+</body>
+</html>

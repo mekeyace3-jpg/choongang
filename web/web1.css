@@ -1,0 +1,21 @@
+/* .(class속성), #(id 속성) */
+.box3{
+    /* width(가로), height:(세로), background-color : 배경색상 */
+    width: 200px;
+    height: 60px;
+    background-color: rgb(247, 161, 229);
+}
+#box4{  /* html에서 id로 적용된 css 효과 */
+    /* 
+    한국, 아시아 : px : pixel 단위,  % : 디바이스 화면 full 사이즈  
+    외국 : rem : 1rem = 16px (오브젝트),  em : 1em = 16px (font 사이즈)
+    그 외에 css 사이즈 : vw = viewport width, vh = viewport height
+    vmin(최소사이즈), vmax(최대사이즈) : 스크린에 보여는 각 디바이스별로 제한
+    1vmin = 7px
+    1vmax = 11px 
+    */
+    width: 100px;
+    height: 100px;
+    border-radius: 25px; /* border-radius : 모서리를 둥글게 적용하는 속성 */
+    background-color: orange;
+}

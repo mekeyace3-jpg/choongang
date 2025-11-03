@@ -1,0 +1,59 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+.btn1 {
+    width: 150px;
+    height: 50px;
+    border-style: double;  /* 외각선의 종류 : solid(실선), dotted(점선), dashed(절취선), double(두줄) */
+    border-color: black; /* 외각선 색상 */
+    border-width: 3px;  /* 외각선 두께 : double 적용시 최소 3px 이상 적용해야만 정상적으로 출력 */
+}
+.btn2 {
+    width: 200px;
+    height: 60px;
+    border:solid red 5px;       /* style,color,width를 한줄로 표현하는 방식코드 */
+}
+.btn3 {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+    border: solid orange 3px;
+    box-sizing: border-box; /* box-sizing : 외각선 위치를 안쪽 외각선으로 변경해서 적용합니다. */
+    /*box-sizing: border-box 미사용시 해당 오브젝트의 크기는 300px 보다 큰 306px이 적용 됩니다. */
+}
+.btn4 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    /* 
+       border-top : 상단 외각선, border-left : 왼쪽 외각선, border-right : 오른쪽 외각선
+       border-bottom : 아래 외각선
+    */
+    border-right: 0px;
+    border-bottom: 0px;
+    box-sizing: border-box;
+}
+/* 
+input type중 text,password,button, submit, reset 는 무조건 border가 적용 됩니다. 
+해당 사이즈 적용시 border가 필요할 경우 box-sizing는 필수 조건 입니다.
+*/
+.mid {
+    width: 250px;
+    height: 40px;
+    box-sizing: border-box;
+}
+.join {
+    width: 500px;
+    height: 50px;
+    background-color: orange;
+    border:0px;
+    font-size: 20px;  /* 글자 크기 */
+    color: red; /* 글자 색상 */
+}
+/* checkbox, radio 속성은 크기만 조절이 가능 합니다. 그 외에 속성을 적용되지 않음 */
+.ck{
+    width: 50px;
+    height: 50px;
+}

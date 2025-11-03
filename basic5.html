@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 1일차 HTML5 전용 동영상</title>
+</head>
+<body>
+<!--동영상 화면 출력 (HTML5)-->
+<!--
+width : 가로사이즈 (px)
+height : 세로사이즈 (px) => pixel
+controls : 미디어플레이어 도구틀
+muted : 음소거
+autoplay : 자동재생
+source 태그 : video 자식태그 불러올 영상 경로를 적용하게 됩니다. (영상, 음악)
+type 속성 : 영상(video/속성명), 음악 (audio/속성명)
+track 태그 : 자막을 사용시에만 적용 태그
+kind 속성 : 해당 파일 src로 읽어들여서 영상에 해당 문자를 출력하는 역활(subtitles)
+            captions(청각장애인용), metadata(스크립트 : skip)
+            src속성 : 자막 파일 경로를 적용 (파일명.ko.vtt,파일명.en.vtt)
+            srclang : 파일명에 맞는 자막 형태의 구성원을 구분하는 구분자
+            lable : 사용자가 어떤 자막을 선택하는지를 미디어 플레이어에 노출시키는 기능
+poster속성 : 썸네일 이미지를 출력하는 역활하는 속성
+-->
+<video width="550" height="550" controls muted autoplay>
+<source src="./img/apink.mp4" type="video/mp4">
+</video>
+
+<video width="550" height="550" controls muted poster="./img/apink.webp">
+<source src="./img/apink.mp4" type="video/mp4">
+<track kind="subtitles" src="" srclang="en" label="English">
+<track kind="subtitles" src="" srclang="ko" label="한국어">
+<track kind="subtitles" src="" srclang="jp" label="Japan">
+</video>
+
+</body>
+</html>

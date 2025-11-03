@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 2일차 - 사용자 정보 입력 태그(HTML5 전용)</title>
+</head>
+<body>
+    <!-- 
+    text라는 속성 datalist라는 태그와 연결될 수 있도록 list라는 속성이 추가 됩니다.
+    datalist는 select를 발전시킨 HTML5 태그이며, 자식태그로는 option을 사용합니다. 
+    -->
+    <input type="text" list="aaa">
+    <datalist id="aaa">
+        <option>LG 냉장고</option>
+        <option>삼성 냉장고</option>
+        <option>삼성 가습기</option>
+        <option>GM 자동차</option>
+    </datalist>
+    <br><br>
+    <!-- 
+    input에 사용되는 코드에서 label 태그가 HTML5 전용으로 추가됩니다.
+    해당 label 태그의 특성은 오브젝트를 생성하는 형태의 구조도 있으며 input 태그를 핸들링
+    할 수 있는 기능도 있습니다. 
+    -->
+    <input type="checkbox" id="ck"><label for="ck">전체선택</label> <!--기본코드-->
+    <!--응용코드-->
+    <label><input type="checkbox">전체선택</label><br><br>
+    <label><input type="radio" name="pay">무통장 입금</label>
+    <label><input type="radio" name="pay">신용카드 결제</label>
+    <label><input type="radio" name="pay">가상계좌 결제</label>
+    <br><br>
+    <!-- fieldset 태그 : 그룹을 만들어서 각각의 연관 요소를 출력시키는 역활을 하는 태그 입니다. -->
+    <fieldset>
+        <!-- legend = title 처럼 해당 그룹의 타이틀 정보를 출력하는 태그 입니다. -->
+        <legend>1번 문제 : 다음 중 HTML의 태그가 아닌 것은?</legend>
+        <input type="radio">body<br>
+        <input type="radio">input<br>
+        <input type="radio">border-style<br>
+    </fieldset>
+
+    <!-- select에서 추가 속성이 발생함(HTML5 전용)-->
+     <select multiple> <!-- multiple 속성 : 여러개를 선택 할 수 있는 속성값 -->
+        <!-- label 속성은 optgroup만 사용하는 속성이며, 그룹명을 지정할 때 사용합니다. -->
+        <optgroup label="기본언어"> <!--optgroup 태그 : option태그를 같은 그룹으로 묶어서 사용하는 태그 -->
+        <option>JAVA</option>
+        <option>HTML</option>
+        </optgroup>
+        <optgroup label="심화단계">
+        <option>Spring</option>
+        <option>Linux</option>
+        </optgroup>
+     </select>
+
+</body>
+</html>

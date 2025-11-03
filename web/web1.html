@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 3일차 - CSS(Style sheets)</title>
+    <!--css3.0 사용방식-->
+    <link type="text/css" rel="stylesheet" href="./web1.css">
+</head>
+<style> /* css2.0 */
+    /* (),{},[] : 소괄호, 중괄호, 대괄호 */
+    .box{
+        width: 160px;
+        height: 30px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <!-- 
+    div 태그 : 컨테이너 역활을 하는 태그(오브젝트 분활 태그)
+    style 속성 : css를 활성화 시키는 속성 입니다. css1.0
+    -->
+    <div style="width:100px; height:100px; background-color: red;"></div>
+    <div class="box"></div> <!--class 속성 : style 태그에서 적용된 값을 가져오는 역활-->
+    <div class="box3"></div>
+    <div id="box4"></div>
+</body>
+</html>
