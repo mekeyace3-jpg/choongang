@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 추가 기능(중급 코드)</title>
+     <link type="text/css" rel="stylesheet" href="./m2.css">
+     <!-- 탭에 해당 ico 파일을 로드하여 웹브라우져에 아이콘 이미지를 출력시킴 -->
+     <link type="images/x-icon" rel="icon" href="./logo.ico">
+     <!--ico 파일로 변환 하여 로드 하시면 좋습니다. -->
+</head>
+<body>
+    <details>
+    <summary class="subject">오늘의 저녁식사 메뉴는?</summary>
+    <ul class="ulcss">
+        <li>김치찌개</li>
+        <li>마라탕</li>
+        <li>고등어구이</li>
+    </ul>
+    </details>
+    <br><br>
+    <!--빈 태그 영역-->
+    <em>HTML연습</em> <!-- i 태그와 동일함 --><br>
+    HTML <mark>신기</mark>해요~~!!   <!--해당 문자에 하이라이트를 적용한 형태 --><br>
+    5<sup>3</sup><br> <!-- sup : 윗첨자 -->
+    5<sub>3</sub> <!--sub : 아랫첨자--><br>
+    <!--code : javascript 또는 css, java 같은 언어 코드를 보여주는 태그 -->
+    <code>
+    System.out.print("test");
+    </code><br><br><br>
+    <!--
+    ruby 태그 : 설명을 필요로 하는 단어에 적용을 하게 됩니다.
+    rt 태그 : 해당 단어에 부가적 상세 설명을 적을 수 있습니다.
+    -->
+    <ruby>컴퓨터<rt>computer</rt></ruby>는 여러가지 기능을 합니다.<br>
+    <!-- HTML5 전용버튼 -->
+    <form method="post" action="http://nate.com">
+    검색 : <input type="text">
+    <!--
+    button 태그 : HTML5 전용 버튼 태그이며, 
+    기본값은 submit 입니다. 추가적으로 type 지정시 속성 변화됨
+    -->
+    <button type="button">회원가입</button>
+    </form> 
+</body>
+</html>
