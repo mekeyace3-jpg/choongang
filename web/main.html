@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 4일차 - 전체 레이아웃 설정(HTML5 전용)</title>
+    <link type="text/css" rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <!--
+    사이트에서 가장 상위 메뉴 및 로고 등 
+    출력하는 파트(로그인, 회원가입, 장바구니, myinfo)
+    -->
+    <header class="top">
+    </header>
+    <!-- nav : 대메뉴, 중메뉴, 소메뉴등 출력하는 레이아웃 태그 -->
+    <nav class="menu"></nav>
+    <!-- main : 사이트 보여지는 전체 레이아웃 관련 사항을 출력하는 태그
+    예시) 메인화면 : 배너, 상품리스트, 공지사항  서브화면 : 게시판 리스트, 게시글 화면... 
+    -->
+    <main>
+        <!--section : 컨텐츠별 레이아웃-->
+        <section class="banner"></section>
+        <!--오늘의 상품 출력 레이아웃-->
+        <section class="today"></section>
+        <!--공지사항 및 고객 리뷰 레이아웃-->
+        <section class="board">
+            <!-- aside태그 : 각 그룹을 묶어서 출력하는 역활도 하며, floow 형태의 컨텐츠도 사용합니다.-->
+            <aside class="viewboard">
+            <!--article : 각각의 독립적인 컨테츠를 출력하는 레이아웃-->
+            <article class="notice"></article> <!--공지사항-->
+            <article class="review"></article> <!--상품리뷰-->
+            </aside>
+        </section>
+    </main>
+    <!--footer : 카피라이터 역활로 활용 됩니다. -->
+    <footer class="copyright"></footer>
+</body>
+</html>

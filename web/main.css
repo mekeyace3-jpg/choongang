@@ -1,0 +1,53 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+.top{
+    height: 150px;
+}
+.menu{
+    height: 100px;
+    background-color: yellowgreen;
+}
+.banner{
+    height: 500px;
+    background-color: purple;
+}
+.today{
+    height: 450px;
+    background-color: skyblue;
+}
+.board{
+    height: 400px;
+    background-color: orange;
+}
+.viewboard{
+    width: 1200px;
+    height: inherit;  /* inherit : 부모 사이즈를 그대로 상속 받아서 처리하는 속성값 */
+    background-color: gray;
+    margin: 0 auto;   
+    /* margin: 0 auto; 란 부모 기준으로 자식태그 가로 사이즈가 
+    작을 경우 무조건 가운데 위치 하는 특수 속성*/
+}
+.notice{
+    width: 600px;
+    height: inherit;
+    background-color: hotpink;
+    /* 
+    float : position에서 (absolute)외에 사용 할 수 있습니다. (left, right)
+    left : 오브젝트 기준으로 왼쪽 형태의 정렬로 구성
+    right : 오브젝트 기준으로 오른쪽 형태의 정렬로 구성
+    */
+    float: left;
+}
+.review{
+    width: 600px;
+    height: inherit;
+    background-color: beige;
+    float: left;
+}
+.copyright {
+    height: 100px;
+    background-color: brown;
+}
