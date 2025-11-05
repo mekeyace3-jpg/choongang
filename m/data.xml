@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+xml란 : 특정 태그로 구성되는 부분이 아닌 개발자가 원하는 태그를 설정 한 후
+마크업 형태로 구성하여 사용할 수 있는 데이터 교환 형식의 파일 입니다.
+-->
+<datas>
+<strawberry>
+<kimchi>오늘의 점심 메뉴</kimchi>
+<black>김치찌게</black>
+<black>참치찌게</black>
+<black>된장찌게</black>
+</strawberry>
+<menu>
+<pink>
+<action>오늘의 영화</action>
+<subject>범죄와의 전쟁</subject>
+<actor>홍길동</actor>
+</pink>
+</menu>
+</datas>

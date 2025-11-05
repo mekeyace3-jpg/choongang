@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5일차 - 웹폰트 및 웹이미지 사용방법</title>
+    <!-- 구글에서 제공된 웹폰트를 해당 api 서버에서 해당 html에 로드 후 css에 반영합니다. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="./m3.css">
+
+</head>
+<body>
+    <span>약관정책</span>
+    <span class="font1">약관정책</span>
+    <span class="font2">약관정책</span><br>
+    고객명 : <input type="text" class="user font2"><br><br>
+    <!-- div 태그에 해당 폰트를 적용 하였더라도 사용자가 입력하는 부분에 별도로 적용 해야만 웹폰트가 적용됩니다.-->
+    <div class="font2">상세주소 : <input type="text" class="addr font2"></div>
+    <br><br><br>
+    <!--
+    svg 파일 : 벡터형태로 생성된 xml 기준의 이미지 파일 입니다. 크기, 색상을 원하는 형태로
+    구성을 하실 수 있으며, 일반 이미지 파일과 다르게 크기 변동시 픽셀이 깨지는 현상은 없습니다.
+    -->
+    <img src="./home.png" class="home"><br>
+    <img src="./home.svg" class="home"><br>
+    <img src="./test.svg" class="home2">
+</body>
+</html>

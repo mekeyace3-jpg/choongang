@@ -1,0 +1,62 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+/* PC용 로그인 */
+.login{
+    width: 600px;
+    height: 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 15px;
+}
+.id {
+    display: block;
+    width: 155px;
+    height: 40px;
+    line-height: 40px;
+    /* padding-top: 12px; */
+    box-sizing: border-box;
+    background-color: yellow;
+    float: left;
+}
+.div_in {
+    width: 300px;
+    height: 40px;
+    background-color: green;
+    float: left;
+}
+.in{ /* div_in이라는 클래스에 사이즈를 상속 받아서 처리함 */
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+}
+.margins{
+    margin-top: 10px;
+}
+.login_btn{ /* 빈태그 형태의 구성을 적용 하였으므로 display를 체크 필요 */
+    display: inline-block;  /* m5.html에서 적용된 사항의 예시 */
+    width: 100px;
+    height: 90px;
+    margin-left: 13px;
+}
+.btn{
+    width: inherit;
+    height: inherit;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+.join {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: yellow;
+}

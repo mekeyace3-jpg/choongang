@@ -1,0 +1,59 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+.email{
+    width: 300px;
+    height: 40px;
+    /* 숫자 파트 4개로 구분하여 사용가능 합니다. (상단, 오른쪽, 아래, 왼쪽) */
+     padding: 0 50px 0 50px;
+    /* margin: 0 0 0 0; */
+    /* text-indent: 50px; */
+    box-sizing: border-box;
+}
+
+.corp{
+    width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+    text-indent: 5px;
+    /* margin: 0 10px 0 0;*/
+}
+.tel {
+    width: 200px;
+    height: 40px;
+    margin: 0 0 0 10px;
+    padding: 0 10px 0 50px;
+    box-sizing: border-box;
+}
+/* 
+   padding 적용시 position 사용할 경우 주의사항 자식태그에  absolute 가 적용되면, 
+   padding 정상적으로 반영되지 않습니다.
+*/
+.pd{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background-color: purple;
+    padding: 20px 20px 0px 20px;
+    box-sizing: border-box;
+}
+.views {
+    position: absolute;
+    bottom: 20px;
+    width: 360px;
+    height: 100px;
+    /* overflow: hidden; 부모기준으로 자식 사이즈가 클 경우 부모사이즈에 맞게 보이도록 설정하는 속성*/
+    overflow: hidden;   
+}
+
+.pdimg{
+    font-style: normal; /* css에서 폰트를 기울게(initial), 정상적으로(normal) 직접 적용가능 */
+    display: block;
+    width: 380px;
+    height: 100px;
+    background-color: yellowgreen;
+    padding: 0 40px 0 40px; /* */
+    box-sizing: border-box;
+}

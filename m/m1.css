@@ -1,0 +1,38 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+/* padding 속성 안쪽 여백을 이용하여 적용하는 속성 (부모기준)
+   padding-left, padding-top, padding-right, padding-bottom
+   box-sizing: border-box; 필수조건으로 사용시 width, height값을 변경하지 않으셔도 적용 됩니다.
+*/
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    padding-left: 200px;
+    padding-top:100px;
+    box-sizing: border-box;
+}
+.box > .bbox{
+    width:100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.box2{
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    padding-left: 250px;
+    padding-top:250px;
+    box-sizing: border-box;
+}
+
+.box2 > .bbox2{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 100px;
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+.font1{ /* Nanum Pen Script */
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+}
+.font2{ /* Dongle */
+  font-family: "Dongle", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  font-style: normal;
+}
+.user{
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+.home{
+  width: 100px;
+  height: 100px;
+}
+.home2{
+  width: 250px;
+  height: 250px;
+}

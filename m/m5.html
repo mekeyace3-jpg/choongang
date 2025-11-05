@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5일차 - display (css)</title>
+</head>
+<style>
+    .box {
+        width: 300px;
+        height: 40px;
+        background-color: skyblue;
+    }
+    .bbox{
+        /* 
+        div외에 빈태그(span, label, em, city....) 사용시 display : block; 
+        display : inline-block;  
+
+        [중요사항]
+        inline-block 사용시 오브젝트 기준으로 오른쪽에 여백이 생성됨 단 여백을 삭제 하고 싶을 경우
+        1. 해당 태그를 모두 한 줄로 사용하는 방식
+        2. maring-right를 이용하여 사용하는 방식
+        */
+        display: inline-block;
+        width: 100px;
+        height: inherit;
+        background-color: yellowgreen;
+        margin-right: -4px;
+    }
+</style>
+<body>
+    <div class="box">
+        <span class="bbox">메뉴1</span>
+        <span class="bbox">메뉴2</span>
+        <span class="bbox">메뉴3</span>
+    </div>
+</body>
+</html>
