@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1일차 - 기초문법(연산)</title>
+</head>
+<script>
+var a1 = 25;
+var a2 = 16;
+var a3 = 11;
+var a4 = 33;
+var total1 = a1 * a2 * a3 + a4;
+console.log(total1);
+var total2 = (a1 * a2) * (a3 + a4);
+console.log(total2);
+
+/*
+응용문제1
+이순신이라는 고객이 있습니다.
+해당 고객의 적립금이 기본으로 2000 점 있으며, 추가로 1600이 적용됩니다.
+최종 결과는 콘솔에 다음과 같이 출력 되도록 하시오.
+
+[결과]
+이순신 고객님 기존 2000 포인트 + 1600 포인트 이며, 최종 포인트는 3600 입니다.
+*/
+var user = "유관순";
+var point = 3000;
+var save = 500;
+var msg = user + "고객님 기존 " + point + "포인트 + " + save + "포인트 이며, 최종 포인트는 " + (point + save) + "입니다.";
+console.log(msg);
+
+var money = 10000;
+var sales = 0.5;
+var sum = money * sales;        //기초 할인율을 적용하는 형태 (소수점)
+console.log("최종 결제금액 : " + sum + "원");
+
+var aa = 100;
+var sum3 = aa % 2;      //나머지 값을 계산하는 형태
+console.log(sum3);
+
+</script>
+<body>
+    
+</body>
+</html>

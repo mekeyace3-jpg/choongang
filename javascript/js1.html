@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1일차 - 기초문법 + 상식</title>
+</head>
+<!--
+동적 웹페이지 : 실시간으로 웹페이지 정보가 변화되는 페이지
+정적 웹페이지 : 고정되어 있는 웹 (인사말 페이지)
+
+javascript : 웹페이지에서 동적으로 사용되는 프로그램 언어
+ECMA script : Javascript + Jquery 언어 결합
+React, Angular, Vue : Javascript를 기반으로 만들어진 프레임 워크 (CDN, CLI)
+-->
+
+<!--script태그 : javascript 문법을 사용하는 공간 (HTML태그 사용안함)-->
+<script>
+    /* 여러줄에서 사용하는 주석이며, //는 한줄에 해당 라인만 주석 처리함 */
+    // alert("테스트 입니다.");
+  
+    var a = "테스트 자바스크립트";  //변수를 선언하는 var(variable)
+    console.log(a);     //console.log(변수명) = 임의 결과값을 출력하는 함수
+
+    var b = 5000;       //"" : 문자인식, ""없는 경우 : 숫자인식
+    console.log(b);
+
+
+    var c = "홍길동";       //신규 c라 변수에 홍길동 값을 이관
+    console.log(c);     //결과 출력
+    c = "강감찬";       //기존 c라는 변수에 강감찬이라는 값을 이관 기존데이터는 삭제
+    console.log(c);     //변경된 값을 출력
+    /*  
+    + : 더하기, 문자와숫자 결합, 문자와문자를 결합
+    - : 빼기, * : 곱하기, / : 나누기, % : 나머지값
+    */
+
+    var user = "유관순"; 
+    var point = 10000;
+    var sum = user + point;   //문자 + 숫자 값을 결합하여 sum 변수에 이관
+    console.log(sum);
+
+    /* ""적용시 해당 결과는 500200 출력이 됩니다. 단 숫자로 선언시 ""(삭제) 후 적용하면 연산처리함 
+        단, *, - , / , % 경우는 "" 있어도 연산처리함
+    */
+    var data1 = "500";
+    var data2 = "200";
+    var data3 = data1 + data2;
+    console.log(data3);
+
+</script>
+<body>
+</body>
+</html>

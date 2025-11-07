@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1일차 - 조건문 (if, else if, else)</title>
+</head>
+<script>
+var a = 10;
+var b = 5;
+/* if(조건문) - 비교문  */
+if(a < b){  //if 문법 필수로 적용 (비교문 or 조건문) {} 안에 코드가 해당 조건이 맞을 경우 작동
+    console.log("b값이 큽니다.");
+}
+else if(a > b){ //else if는 if의 반대 또는 다른 조건을 사용하는 경우 
+    console.log("a값이 큽니다.");
+}
+else{       //if와 else if 외에 조건을 말합니다.
+    console.log("두 값이 같습니다.");
+}
+/*
+else if(a==b){
+    console.log("두 값이 같습니다.");
+}
+*/
+
+/* 문자 조건을 사용하는 방식 */
+var mid = "hong";
+if(mid == "hong"){
+    console.log("로그인 하셨습니다.");
+}
+/* else if는 여러번 다양한 조건을 설정할 수 있습니다. */
+else if(mid == "kim"){
+    console.log("휴면 고객 입니다.");
+}
+else if(mid == "park"){
+    console.log("탈퇴 회원 입니다.");
+}
+else{
+    console.log("해당 고객은 가입되지 않은 고객입니다.");
+}
+/* 응용문제2 
+쿠폰번호를 확인하는 조건문 코드를 작성합니다.
+쿠폰번호가 123456 이면 결과는 "해당 쿠폰은 이미 사용하였습니다." 라고 출력하며
+쿠폰번호가 556123 이면 "해당 쿠폰을 적용합니다." 라고 출력하십시오.
+단, 해당 쿠폰 외에 다른 번호를 입력시킬 경우 "올바른 쿠폰번호를 입력하세요" 라는 값이 출력 되어야
+합니다.
+*/
+var cp = "123456";
+if(cp == "123456"){
+    console.log("해당 쿠폰은 이미 사용하였습니다.");
+}
+else if(cp == "556123"){
+    console.log("해당 쿠폰을 적용합니다.");
+}
+else if(cp == "556003"){
+    console.log("해당 쿠폰을 적용합니다.");
+}
+else{
+    console.log("올바른 쿠폰번호를 입력하세요");
+}
+
+</script>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 1일차 - 조건문 + 조건문</title>
+</head>
+<script>
+    var mid = "hong";   //아이디
+    var mpw = "a1234556";    //패스워드
+    if(mid == "hong"){
+        if(mpw == "a123456"){
+            console.log("로그인 되셨습니다.");
+        }
+        else{
+            console.log("패스워드를 확인 하세요");
+        }
+    }
+    else{
+        console.log("가입되지 않은 고객 입니다.");
+    }
+     /* 복합조건문을 논리 연산기호로 출력 방식 
+     &&(and) : 1개 이상의 조건일 때 사용을 합니다. 모든 조건이 맞을 경우
+     ||(or) : 여러개의 조건 중 단 한가지라도 조건이 맞을 경우 
+     */
+    if(mid == "hong" && mpw == "a123456"){
+        console.log("로그인 하셨습니다.");
+    }
+    else{
+        console.log("아이디 및 패스워드를 확인하세요");
+    }
+  /* 
+  응용문제3
+  사용자가 임의 숫자를 변수에 입력합니다. 1 ~ 30까지의 숫자를 선택합니다.
+  5단위 해당 숫자를 검토하는 조건문을 작성하시오.
+  결과는 다음과 같습니다.
+  "5이하의 숫자입니다." 
+  "10이하의 숫자입니다."
+  "15이하의 숫자입니다."
+  그 외에 숫자는 "15 이상의 숫자 입니다." 라는 결과를 출력 합니다.
+  */
+  var no = 0;
+  if(no < 6){
+    console.log("5이하의 숫자입니다.");
+  }
+  else if(no < 11){
+    console.log("10이하의 숫자입니다.");
+  }
+  else if(no < 16){
+   console.log("15이하의 숫자입니다.");
+  }
+  else {
+    console.log("15 이상의 숫자 입니다.");
+  }
+
+
+</script>
+<body>
+
+</body>
+</html>

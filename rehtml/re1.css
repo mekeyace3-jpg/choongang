@@ -1,0 +1,108 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+   /* body에 적용된 모든 폰트를 해당 웹폰트로 적용함 단, 사용자가 입력하는 부분은 별도로 지정 필요 */
+   font-family: "Nanum Gothic", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+}
+.web_top{
+    height:150px;
+}
+/* position: static; (margin) */
+.web_top > .top{
+    position: relative;
+    width: 1000px;
+    height: inherit;  /* 부모에 적용된 속성을 자식 태그에 동일하게 반영할 경우 inherit(상속)을 사용 */
+    margin: 0 auto;
+}
+/* position: relative; (margin, left, top) */
+.web_top > .top > .logo{
+    position: relative;  
+    width: 250px;
+    height: inherit;
+}
+.web_top > .top > .logo > .logo_img {
+    position: relative;
+    top : 52px;
+}
+
+
+/* position: absolute; (left, top, right, bottom) */
+.web_top > .top > .menu{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    width: 700px;
+    height: inherit;
+
+}
+.web_footer{
+    height: 200px;
+    background-color: #333;
+}
+.web_main{
+    height: 800px;
+    background-color: plum;
+}
+
+/* 대메뉴, 소메뉴 파트 */
+.demenu {
+    list-style: none;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+.demenu > li{
+    font-size: 16px;
+    width: 100px;
+    height: inherit; /* inherit 주의사항 부모에 해당 속성이 있어야만 적용할 수 있는 값*/
+    /* float : 오브젝트 정렬 (center, left, right) - 메뉴을 사용시 left, right 다르게 보임 */
+    float: left;
+    line-height: 150px; /* 1줄에 한해서 자간의 높이 조정하여 오브젝트 높이 맞춰서 조정가능 */
+    text-align: center; /* li 가로기준으로 가운데 정렬 */
+    /* text-align : 폰트, input태그, img 태그, video태그 */
+    
+    /* 하나의 메뉴 기준으로 좌,우 여백을 조정 사용자 눈으로 확인 시에는 16px로 보이도록 설정 */
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.demenu > li:hover{  /* hover 해당 오브젝트에 마우스 포인터가 있을 경우 적용되는 css */
+    color: green;
+}
+
+/* 
+대메뉴 마우스 오버시 소메뉴 파트를 보이도록 하는 코드 
+해당 자식 태그 중 .somenu 해당 클래스를 선언한 HTML코드가 있을 경우만 작동 됩니다.
+*/
+.demenu > li:hover > .somenu {
+    display: block;
+}
+
+/* 소메뉴 파트 */
+.somenu{
+    display: none; /* 해당 오브젝트를 보이지 않도록 적용함 */
+    width: inherit;  /* 대메뉴에서 li 가로크기를 그대로 상속 받음 */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    /* border-radius : 오브젝트의 모서리를 둥글게 조절 할 수 있는 속성 */
+    border-radius: 0 0 15px 15px;
+}
+.somenu > li{
+    color : black;   /* color : 글자만 적용되는 색상 속성임 */
+    width: inherit;
+    height: 50px;
+    line-height: 50px;
+}
+.somenu > li:hover{
+    color: white;
+    background-color: yellowgreen;
+}
+/* 몰라도됨 */
+.somenu > li:last-child{
+    border-radius: 0 0 15px 15px;
+}

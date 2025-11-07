@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML&CSS 복습1 (메인페이지)</title>
+    <!-- link 태그 : css, webfont, 파비콘(favicon)-탭에 이미지 -->
+    <!-- 구글 웹폰트를 사용할 수 있도록 해당 링크값을 적용함-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    
+    <link type="text/css" rel="stylesheet" href="./re1.css">
+</head>
+<style> 
+/* 팝업에서 사용하는 style */ 
+
+</style>
+<body>
+    <!--레이아웃-->
+    <header class="web_top">
+        <div class="top">
+            <!--로고-->
+            <aside class="logo">
+                    <img src="./nvidia.svg" class="logo_img">
+            </aside>
+            <!--메뉴-->
+            <nav class="menu">
+                <ul class="demenu">
+                    <li>제품
+                        <ol class="somenu">
+                            <li>클라우드</li>
+                            <li>네트워킹</li>
+                        </ol>
+                    </li><!--소메뉴-->
+                    <li onclick="page1();">솔루션</li>
+                    <li>산업</li>
+                    <li>제품 둘러보기</li>
+                    <li>드라이버
+                        <ol class="somenu">
+                            <li>GTX 시리즈</li>
+                        </ol>
+                    </li> <!--소메뉴-->
+                    <li>지원
+                        <ol class="somenu">
+                            <li>한국 AI지원</li>
+                            <li>인텔 협약</li>
+                            <li>반도체 제휴</li>
+                        </ol>
+                    </li>
+                </ul>
+            </nav>
+        </div><!--1000px 레이아웃-->
+    </header><!--상단-->
+    <main class="web_main"> <!--컨텐츠 뷰-->
+         메인화면
+    </main>
+    <footer class="web_footer"></footer><!--하단-->
+    <script>
+        function page1(){
+            location.href="http://nate.com";
+        }
+    </script>
+</body>
+</html>
