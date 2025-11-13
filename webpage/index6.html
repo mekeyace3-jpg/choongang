@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + Javascript 결합(팝업창 - 자식창)</title>
+</head>
+<script src="./index6.js"></script>
+<body>
+<!-- 부모창에서 자식창으로 값 전달 -->
+검색어 : <input type="text" id="sw">
+<input type="button" value="자식창 값 전송" onclick="chpop()">
+<br><br><br>
+<!-- 자식의 값을 가져와서 입력시키는 방식 -->
+주소 : <input type="text" id="addr" readonly>    
+<input type="button" value="확인" onclick="popup()">
+<br><br><br>
+
+<!--
+<input type="button" value="이벤트 참여" onclick="events()">
+-->
+</body>
+</html>

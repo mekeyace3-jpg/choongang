@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + Javascript 결합(function - 함수를 이용한 다양한 문법 2)</title>
+</head>
+<script src="./index3.js"></script>
+<body>
+<!-- onchange 속성은 기존에 있는 값에서 사용자가 변경을 하는 순간 발동되는 속성값 -->
+<!-- this : 해당 this는 HTML 태그안에 적용된 코드에 한해서 특정 속성을 이용함-->
+<select onchange="corp(this.value)">
+    <option value="">통신사</option>
+    <option value="SKT">SKT텔레콤</option>
+    <option value="KT">KT</option>
+    <option value="LGT">LGT</option>
+    <option value="알뜰폰">알뜰폰</option>
+</select>
+
+<input type="text" id="email">
+<select onchange="em(this.value)">
+    <option value="">직접입력</option>
+    <option value="naver.com">네이버</option>
+    <option value="nate.com">네이트</option>
+    <option value="gmail.com">구글</option>
+</select>
+<br><br>
+<input type="checkbox" id="login" value="Y">자동로그인
+<input type="button" value="확인" onclick="auto_login()">
+<br><br>
+<input type="radio" name="agree" value="Y">동의함
+<input type="radio" name="agree" id="agree" value="N" checked>동의안함
+<input type="button" value="회원가입" onclick="ag()">
+</body>
+</html>

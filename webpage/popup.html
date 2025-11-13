@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팝업창</title>
+</head>
+<script>
+    //window.location.search : URL주소를 가져오는 부분에서 ?에 대한 파라미터값
+    //encodeURIComponent : 데이터를 암호화
+    //decodeURIComponent : 데이터를 복호화
+    //window.onload = function() : HTML코드가 모두 실행 후 javascript 언어를 실행
+    window.onload = function(){     
+    var data = window.location.search;
+    var data2 = decodeURIComponent(data);   //=> ?a=냉장고
+    var data3 = data2.split("a=");  //split 이란 해당 파라미터 단어 기준으로 배열화 시킴
+    document.getElementById("word").value = data3[1];
+    }
+</script>
+<body>
+    <!-- 부모창에서 값을 이관하여 자식창에 데이터를 전송하는 방식 -->
+    검색한 주소 : <input type="text" id="word" readonly>
+
+   <br><br>
+    [주소리스트]<br>
+    <ul>
+        <li onclick="address('마포구')">마포구</li>
+        <li onclick="address('영등포구')">영등포구</li>
+        <li onclick="address('동작구')">동작구</li>
+        <li onclick="address('인천 연천구')">인천 연천구</li>
+    </ul>
+    <input type="button" value="창닫기" onclick="pop_close()">
+</body>
+<script>
+function address(ad){
+    //window.opener : 자식창을 오픈시킨 부모창을 말합니다.
+    window.opener.document.getElementById("addr").value = ad;
+    self.close();
+} 
+function pop_close(){
+    self.close();   //자식창을 강제 종료 하는것을 말합니다.
+}
+
+</script>
+</html>
