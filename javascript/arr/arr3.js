@@ -3,7 +3,7 @@ var a=[    //2차배열 구조
     [25,33,40,55]
 ];
 //a[배열그룹번호][배열데이터번호]
-//console.log(a[1][1]);  
+//console.log(a[1][3]);  
 //console.log(a[0][2]);
 console.log(a[0].length);       /* 0번째 그룹에 배열 데이터가 몇개 있는지 확인 */
 console.log(a.length);  /* 해당 배열에 그룹이 몇개 있는지 확인 */
