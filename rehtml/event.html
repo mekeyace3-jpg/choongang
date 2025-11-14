@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./event.css">
+    <script src="./event.js"></script>
 </head>
 <body>
     <header class="top">
@@ -33,31 +34,31 @@
                     <!-- 주제 또는 타이틀 관련 정보를 출력하는 태그-->
                     <p class="title">귀멸의 칼날 오픈기념 이벤트</p>
                     <span class="info">
-                        <input type="text" class="user" placeholder="고객명을 입력하세요.">
+                        <input type="text" class="user" id="cnm" placeholder="고객명을 입력하세요.">
                     </span>
                     <span class="info">
-                        <input type="text" class="user" placeholder="연락처를 입력하세요.">
+                        <input type="text" class="user" id="ctel" placeholder="연락처를 입력하세요.">
                     </span>
                     <span class="info">
-                        <input type="text" class="user" placeholder="이메일을 입력하세요.">
+                        <input type="text" class="user" id="cemail" placeholder="이메일을 입력하세요.">
                     </span>
                     <span class="info">
-                        <input type="password" class="user" placeholder="패스워드를 입력하세요.">
+                        <input type="password" class="user" id="cpw" placeholder="패스워드를 입력하세요.">
                     </span>
                     <span class="info">
-                        <input type="text" class="user" placeholder="귀멸의 칼날 중 좋아하는 캐릭터명">
+                        <input type="text" class="user" id="caw" placeholder="귀멸의 칼날 중 좋아하는 캐릭터명">
                     </span>
                     <span class="info">
-                        <input type="submit" value="이벤트 참여하기" class="btn">
+                        <input type="button" value="이벤트 참여하기" class="btn" onclick="eventinfo()">
                     </span>
                     <!--개인정보정책 동의사항 -->
                     <fieldset>
                         <legend class="agree_title">개인정보 수집동의</legend>
                         <em style="font-style: normal;">
                             <!--label 태그는 input과 결합시 글자를 클릭 하였을 경우 반응하여 적용됨-->
-                            <label><input type="checkbox"> 개인정보 수신동의</label><br>
-                            <label><input type="checkbox"> 제 3 자의 정보공개 동의</label><br>
-                            <label><input type="checkbox"> 마케팅 수신동의</label>
+                            <label><input type="checkbox" id="agree0" value="Y"> 개인정보 수신동의</label><br>
+                            <label><input type="checkbox" id="agree1" value="Y"> 제 3 자의 정보공개 동의</label><br>
+                            <label><input type="checkbox" id="agree2" value="Y"> 마케팅 수신동의</label>
                         </em>
                     </fieldset>
 
