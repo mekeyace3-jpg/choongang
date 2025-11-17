@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML + Javascript (타이머)</title>
+</head>
+<body>
+<div class="youtube" id="youtube">
+<span class="blackbtn">SKIP <font id="ad"></font>초</span>
+</div>
+<br><br><br>
+
+<p>setTimer + ClearTimer</p>
+<input type="button" value="시작" onclick="abc()">
+<input type="button" value="정지" onclick="zzz()">
+<div id="view">
+</div>
+<p>setInterval + ClearInterval</p>
+<input type="button" value="시작" onclick="bbb()">
+<input type="button" value="정지" onclick="ccc()">
+<div id="view2">
+
+</div>
+
+
+</body>
+<style>
+.blackbtn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.youtube{
+    position: relative;
+    width:600px;
+    height:500px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+</style>
+<script src="./timer.js"></script>
+</html>
