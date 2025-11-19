@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 8일차 - GET 통신 방법 (Server) - 여러개의 데이터 </title>
+</head>
+<script>
+//replaceAll 과 split 사용법
+//var word = "한국,일본,중국,태국";
+//var result = word.replace(",","|");
+//var result = word.replaceAll(","," ");
+//var result = word.split(",");
+
+var word = "?fir=한국&data1=일본&data2=중국&data3=태국";
+var result = word.replace("?fir=","");
+result = result.replace("&data1=",",");
+result = result.replace("&data2=",",");
+result = result.replace("&data3=",",");
+result = result.split(",");
+
+console.log(result);
+</script>
+<body>
+    <form>
+    연락처 : <input type="text" name="tel" id="tel" readonly><br>
+    주소 : <input type="text" name="addr" id="addr" readonly><br>
+    추천인 : <input type="text" name="user" id="user"><br>
+    <input type="button" value="등록완료">
+    </form>
+</body>
+<script>
+    var arr = [];   //파라미터로 데이터를 분리하여 빈 배열에 값을 저장하기 위한 변수
+    var data = decodeURIComponent(document.location.search);
+    /*
+    replace : 동일한 단어가 여러개 있을 경우 첫번째 해당되는 단어만 변경
+    replaceAll('변경전 단어','변경할 단어') : 전체 문장 중에서 동일한 단어 모두 변경
+    */
+    data = data.replaceAll('+',' ');
+    console.log(data);
+    var addr = data.split("="); //split :단어기준 배열화
+    console.log(addr);
+    arr.push(addr[2]);
+    var tel = addr[1].split("&");
+    console.log(tel);
+    arr.unshift(tel[0]);
+    
+    console.log(arr);   //최종결과
+    document.getElementById("tel").value = arr[0];
+    document.getElementById("addr").value = arr[1];
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 8일차 - GET 통신 방법 (Guest)</title>
+</head>
+<body>
+<!-- 
+    http://abc.co.kr/abc.html (URL) 
+    http://abc.co.kr/abc.html?mid=hong (URI)
+-->
+<!-- onsubmit : form에만 적용하며 함수 앞에 무조건 return으로 처리함 -->
+<form enctype="application/x-www-form-urlencoded" method="get" action="./webpage2.html" onsubmit="return abc()">
+    <!-- name적용시 get 통신일 경우 파라미터에 해당 이름이 적용되어서 전송됨 -->
+    아이디 : <input type="text" name="mid" id="mid"><br>
+    <!--
+    이메일 : <input type="text" name="memail" value="hong@nate.com">
+    -->
+    <input type="submit" value="전송">
+</form>
+<br><br><br>
+
+<form method="get" action="./webpage3.html" onsubmit="return info()">
+연락처 : <input type="text" name="tel" id="tel"><br>
+주소 : <input type="text" name="addr" id="addr"><br>
+<input type="submit" value="전송">
+</form>
+
+</body>
+<script src="./webpage1.js"></script>
+</html>
