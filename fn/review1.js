@@ -9,12 +9,12 @@ var reviews = function(){
         return false;
     }
     else if(ctel.value == ""){
-        alert("고객명을 입력하세요!");
+        alert("연락처를 입력하세요!");
         ctel.focus();
         return false;
     }
     else if(prname.value == ""){
-        alert("고객명을 입력하세요!");
+        alert("상품명을 입력하세요!");
         prname.focus();
         return false;
     }
