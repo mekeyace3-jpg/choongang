@@ -2,9 +2,13 @@
 function abc(no){   //no 매개변수
     if(no == 1){
         bbb();
+       // ddd();
     }
     else if(no == 2){
         ccc();
+    }
+    function ddd(){
+        console.log("서비스 점검중입니다.");
     }
 
     function bbb(){
@@ -16,7 +20,7 @@ function abc(no){   //no 매개변수
 }
 
 function ccc(){
-    console.log("ccc함수");
+    console.log("ccc함수2");
 }
 
 
@@ -27,9 +31,13 @@ var box = function(){       //표현식 함수 (외부)
     function box1(){    //선언식 함수 (내부)
         console.log("box1 내부함수");
     }
+    function box2(){
+        console.log("box2 내부함수");
+    }
     
     return { 
-        box1:box1 //가상변수 매칭 
+        box111:box1,
+        box222:box2//가상변수 매칭 
     }
 }
 
