@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript - 이벤트 핸들링</title>
+</head>
+<style>
+    .ani{
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: green;
+    }
+    .ani:active {
+        /* transform: translate(600px,0) rotate(360deg); */
+        transform: translateX(600px); /* 화면 기준으로 가로 600px 만큼 움직임 */
+        transition: all 2s ease;
+        /*
+        transition-duration: 2s;    애니메이션 시간
+        transition-property: all;   애니메이션에 적용할 수 있는 모든 속성
+        transition-timing-function: ease; 동일하게 움직이도록 설정
+        */
+        background-color: white;
+    }
+</style>
+<body>
+<div class="ani">
+
+</div>
+    
+<div class="btn" style="width: 100px; height: 100px; background-color: black;">
+
+</div>
+<input type="button" value="클릭" id="btn">
+<input type="button" value="클릭2" class="btn">
+<br><br><br>
+<div class="box" id="box">
+</div>
+<br><br><br>
+<ul id="ul">
+<li>공지사항1</li>
+<li>공지사항2</li>
+<li>공지사항3</li>
+<li>공지사항4</li>
+<li>공지사항5</li>
+</ul>
+
+</body>
+<style>
+    .box{ width: 300px; height: 300px; background-color: blue;}
+</style>
+<script src="./ecma4.js"></script>
+</html>

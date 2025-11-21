@@ -55,7 +55,18 @@ result2.send();
 
 /* 보안인증번호 4자리 (디자이너와 함께 사용하는 경우) */
 function se(){
-
+    var seno = document.getElementById("seno");
+    if(seno.value == ""){
+        alert("보이는 인증번호 4자리를 입력하세요!");
+    }
+    else{
+        if(s == seno.value){
+            alert("회원가입 진행을 합니다.");
+        }
+        else{
+            alert("인증번호 4자리를 다시 입력하세요!");
+        }
+    }
 }
 /* 응용문제 
    해당 코드는 배열에 있는 4자리 숫자로 작성 되어 있으나, 사용자가 새로고침 또는 다른 웹 페이지를
@@ -68,10 +79,13 @@ var security = document.getElementById("security");
 //var s = [5,3,2,8];
 var f;
 var html = "";
+var s = "";     //사용자가 입력한 값과 PC가 랜덤으로 뽑은 숫자값을 비교하기 위함
 for(f=0; f<4; f++){
     //<img src='./no/no5.png'>
     //html = html + "<img src='./no/no"+s[f]+".png'>";
-    html = html + "<img src='./no/no"+ +".png'>";
+    var r = Math.floor(Math.random()*10);
+    s = s + r;
+    html = html + "<img src='./no/no"+ r +".png'>";
 }
 security.innerHTML = html;
 

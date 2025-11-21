@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 9일차 - 이벤트 핸들링</title>
+</head>
+<body>
+<!--
+onkeydown : 키를 누르는 순간 이벤트 발생
+onkeyup : 키를 누르고 나서 떼기가 발생 했을때 이벤트 발생
+onkeypress : onkeydown 비슷한 속성을 가지고 있습니다.
+-->
+<input type="text" id="mid" onkeydown="aaa(this.value)"><br>
+<input type="text" id="mid2" onkeyup="aaa(this.value)"><br>
+<input type="text" id="mid3" onkeypress="aaa(this.value)"><br>
+<!-- 상세 이벤트 핸들링 
+onmouseover  : 마우스 포인터가 해당 오브젝트에 있을 경우 (자식 객체와 별개로 작동)
+onmouseout : 마우스 포인터가 해당 오브젝트 밖에 있을 경우  (자식 객체와 별개로 작동)
+onmouseenter : onmouseover와 같으며 단, 자식 객체 또한 같은 오브젝트로 인식
+onmouseleave : onmouseout와 같으며 단, 자식 객체 또한 같은 오브젝트로 인식
+-->
+<br><br>
+<input type="text" id="user" onkeydown="bbb(this)"><br>
+<input type="text" id="user2" onkeypress="ccc(this)"><br>
+<input type="text" id="user3" onkeyup="ddd(this)"><br>
+<br><br>
+<div class="box" onmouseover="m1()">
+    <div class="sbox"></div>
+</div>
+<div class="box" onmouseout="m2()">
+    <div class="sbox"></div>
+</div>
+<div class="box" onmouseenter="m3()">
+   <div class="sbox"></div>    
+</div>
+<div class="box" onmouseleave="m4()">
+    <div class="sbox"></div>
+</div>
+</body>
+<style>
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 1px solid red;
+    }
+    .sbox{
+        width: 30px;
+        height: 30px;
+        background-color: blue;
+    }
+</style>
+<script src="./fn5.js"></script>
+</html>

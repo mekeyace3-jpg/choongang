@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 8일차 - 함수 컨트롤</title>
+</head>
+<body>
+<!-- 선언식 방식 -->
+<input type="button" value="클릭1" onclick="abc(1)">
+<input type="button" value="클릭2" onclick="abc(2)">
+<input type="button" value="클릭3" onclick="ccc()">
+<br><br><br>
+<!-- 표현식 방식 -->
+<input type="button" value="클릭1" onclick="box()">
+<input type="button" value="클릭2" onclick="box().box111()">
+<input type="button" value="클릭3" onclick="box().box222()">
+<br><br>
+<!--선언방식 & 표현방식의 차이점 (return 함수)-->
+<input type="button" value="선언식" onclick="load1()">
+<input type="button" value="표현식" onclick="load2()">
+</body>
+<script src="./fn1.js"></script>
+</html>
