@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레시피 정보 (식품안전 API)</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 20px; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; background: #fff; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        th { background: #2196F3; color: white; }
+        tr:nth-child(even) { background: #f2f2f2; }
+        .img-thumb { width: 80px; height: 80px; object-fit: cover; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>샘플 레시피 정보 (식품안전 API)</h1>
+    <table id="recipe-table">
+        <thead>
+            <tr>
+                <th>이미지</th>
+                <th>레시피명</th>
+                <th>재료</th>
+                <th>조리방법</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 데이터가 여기에 표시됩니다 -->
+        </tbody>
+    </table>
+    <script>
+        const url = 'https://openapi.foodsafetykorea.go.kr/api/sample/COOKRCP01/xml/1/5';
+        fetch(url)
+            .then(response => response.text())
+            .then(str => (new window.DOMParser()).parseFromString(str, 'text/xml'))
+            .then(data => {
+                const rows = data.querySelectorAll('row');
+                const tbody = document.querySelector('#recipe-table tbody');
+                rows.forEach(row => {
+                    const name = row.querySelector('RCP_NM')?.textContent || '';
+                    const img = row.querySelector('ATT_FILE_NO_MAIN')?.textContent || '';
+                    const ingredient = row.querySelector('RCP_PARTS_DTL')?.textContent || '';
+                    const method = row.querySelector('RCP_WAY2')?.textContent || '';
+                    const tr = document.createElement('tr');
+                    tr.innerHTML = `
+                        <td>${img ? `<img src="${img}" class="img-thumb" alt="${name}">` : ''}</td>
+                        <td>${name}</td>
+                        <td>${ingredient}</td>
+                        <td>${method}</td>
+                    `;
+                    tbody.appendChild(tr);
+                });
+            })
+            .catch(error => {
+                const tbody = document.querySelector('#recipe-table tbody');
+                tbody.innerHTML = `<tr><td colspan="4">데이터를 불러올 수 없습니다.</td></tr>`;
+            });
+    </script>
+</body>
+</html>
